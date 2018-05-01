@@ -3,9 +3,15 @@
 #SID:215158268
 #Project - Sonic Game App
 #Device Platform - Anndroid
+#This game is creating using by Unity Software.
+  for run and test this game app in computer, you must need;
+    1. the latest version of Unity software in your computer
 
-(Henry wants to see an SID in here, and also see both licenses.txt and changelog files)
-(Hi sir, I added all the documents that you wanted to see and i'm still working on the project. Thanks)
+#Instructions for run the game in Android device:
+
+  1.On your Android device, navigate to Settings > About phone or Settings > About tablet.
+  2.Scroll to the bottom and then tap Build number seven times. A popup will appear, confirming that you are now a developer.
+  3.Now navigate to Settings > Developer options > Debugging and enable USB debugging.
 
 # Henry comments 27/April
 - This file still needs compile instructions, and directory explanation so I know where to find stuff.

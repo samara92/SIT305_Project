@@ -911,7 +911,7 @@ CircleCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1015995244}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -931,6 +931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a191476d3d71dc541a3718974ee46d66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
   tapForce: 15
   tiltSmooth: 1
   startPos: {x: 0, y: 0, z: 0}

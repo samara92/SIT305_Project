@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class TapController : MonoBehaviour {
@@ -8,6 +9,8 @@ public class TapController : MonoBehaviour {
     public delegate void PlayerDelegate();
     public static event PlayerDelegate OnPlayerDied;
     public static event PlayerDelegate OnPlayerScored;
+
+    public float speed = 5f;
 
 
     public float tapForce = 10;
@@ -21,13 +24,15 @@ public class TapController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         rigidbody = GetComponent<Rigidbody2D>();
-        downRotation = Quaternion.Euler(0, 0, -90);
-        forwardRotation = Quaternion.Euler(0, 0, 35);
+        downRotation = Quaternion.Euler(0, 0, 0);
+        forwardRotation = Quaternion.Euler(0, 0, 0);
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+        transform.Translate(speed * Time.deltaTime, 0, 0);
 		
         if (Input.GetMouseButtonDown(0))
         {
@@ -38,7 +43,7 @@ public class TapController : MonoBehaviour {
 
         transform.rotation = Quaternion.Lerp(transform.rotation, downRotation, tiltSmooth * Time.deltaTime);
 
-	}
+	  }
 
     private void OnTriggerEnter2D(Collider2D col)
     {

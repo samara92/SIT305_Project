@@ -11,11 +11,11 @@
   - Scroll to the bottom and then tap Build number seven times. A popup will appear, confirming that you are now a developer.
   - Now navigate to Settings > Developer options > Debugging and enable USB debugging.
   
-  -Connect your Android device to your computer using a USB cable.
-  -You may see a prompt asking you to confirm that you wish to enable USB debugging on the device. If so, click OK.
-  -In Unity, open the Build Settings from the top menu (File > Build Settings).
-  -Click Add Open Scenes to add the Main scene to the list of scenes that will be built.
-  -Click Build And Run.
+  - Connect your Android device to your computer using a USB cable.
+  - You may see a prompt asking you to confirm that you wish to enable USB debugging on the device. If so, click OK.
+  - In Unity, open the Build Settings from the top menu (File > Build Settings).
+  - Click Add Open Scenes to add the Main scene to the list of scenes that will be built.
+  - Click Build And Run.
 
 # Henry comments 27/April
 - This file still needs compile instructions, and directory explanation so I know where to find stuff.

@@ -24,8 +24,8 @@
   - Temp
   - UnityPackageManager
   - Assets 
-          	- *font folder -> all the fonts that used for the game
-	        - *prefebs -> all the game template objects that create new instances of the same object in the scene
+          	*font folder -> all the fonts that used for the game
+	        *prefebs -> all the game template objects that create new instances of the same object in the scene
           	*scenes -> contains game environment and menus of the game
           	*scripts -> all the code files that conect with the internal workings of the game
           	*sprite -> all the 2D objects that used for characters,props,projectiles and other elements of the game

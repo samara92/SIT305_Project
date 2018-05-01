@@ -16,7 +16,21 @@
   - In Unity, open the Build Settings from the top menu (File > Build Settings).
   - Click Add Open Scenes to add the Main scene to the list of scenes that will be built.
   - Click Build And Run.
-
+# Directory Layout
+  - Sonic Game 
+  - game_icons
+  - Library
+  - ProjectSettings
+  - Temp
+  - UnityPackageManager
+  - Assets 
+          	*font folder -> all the fonts that used for the game
+	          *prefebs -> all the game template objects that create new instances of the same object in the scene
+          	*scenes -> contains game environment and menus of the game
+          	*scripts -> all the code files that conect with the internal workings of the game
+          	*sprite -> all the 2D objects that used for characters,props,projectiles and other elements of the game
+            
+            
 # Henry comments 27/April
 - This file still needs compile instructions, and directory explanation so I know where to find stuff.
 - Your changelog needs a lot of work

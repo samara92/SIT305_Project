@@ -1,3 +1,6 @@
 Week 03 - Design the game layout 
 week 04 - Design charactors and the background 
 week 05 - Create first step of the game
+week 06 - create all the pages of the game
+week 07 - start the cording using C#. (sonic caractor moving forward and jump function done)
+week 08 - creating the enemey and the other game obejects funtions

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 	//player movement
 	public float jumpHeight;
+	private float moveVelocity;
 	public float movmentSpeed;
 	public Vector2 playerRigidBody2DVelocity;
 	//Double jump
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		playerRigidBody2DVelocity = new Vector2( GetComponent<Rigidbody2D> ().velocity.x,GetComponent<Rigidbody2D> ().velocity.y);
+
 		if (grounded)
 			doubleJump = false;
 
@@ -44,15 +46,21 @@ public class PlayerController : MonoBehaviour {
 			doubleJump = true;
 		}
 
+		moveVelocity = 0f;
+
 		if (Input.GetKey (KeyCode.A)) {
 
-			GetComponent<Rigidbody2D> ().velocity = new Vector2 (-movmentSpeed, playerRigidBody2DVelocity.y);
+			//GetComponent<Rigidbody2D> ().velocity = new Vector2 (-movmentSpeed, playerRigidBody2DVelocity.y);
+			moveVelocity = - movmentSpeed;
 		}
 
 		if (Input.GetKey (KeyCode.D)) {
 
-			GetComponent<Rigidbody2D> ().velocity = new Vector2 (movmentSpeed, playerRigidBody2DVelocity.y);
+			//GetComponent<Rigidbody2D> ().velocity = new Vector2 (movmentSpeed, playerRigidBody2DVelocity.y);
+			moveVelocity = movmentSpeed;
 		}
+
+		GetComponent<Rigidbody2D> ().velocity = new Vector2 (moveVelocity, GetComponent<Rigidbody2D> ().velocity.y);
 
 		playerAnim.SetFloat ("Speed", Mathf.Abs (playerRigidBody2DVelocity.x));
 		if (playerRigidBody2DVelocity.x > 0)

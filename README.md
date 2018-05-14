@@ -2,7 +2,7 @@
 # Name: Sameera Dinusha Priyananda
 # SID:215158268
 # Project - Sonic Game App
-# Device Platform - Anndroid
+# Device Platform - Android and iOS
 # This game created using by Unity Software.(version 2017.1.0f3)
   for run and test this game app in computer, you must need;
     - the latest version of Unity software in your computer

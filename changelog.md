@@ -3,4 +3,6 @@
 - week 05 - Create first step of the game
 - week 06 - create all the pages of the game
 - week 07 - start the cording using C#. (sonic caractor moving forward and jump function done)
-- week 08 - creating the enemey and the other game obejects funtions
+- week 08 - change the world into platform
+- week 09 - create the sonic charctor funtions (Run,Jump)
+- week 10 - create the enemy charactor function and create fire option to the sonic

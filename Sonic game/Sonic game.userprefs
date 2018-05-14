@@ -2,12 +2,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LevelManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\LevelManager.cs" Line="53" Column="22" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="27" Column="3" />
-      <File FileName="Assets\Scripts\SocreManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CoinPickUp.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\EnemyAI.cs" Line="25" Column="36" />
-      <File FileName="Assets\Scripts\CameraControll.cs" Line="12" Column="22" />
+      <File FileName="Assets\Scripts\HurtPlayer.cs" Line="22" Column="38" />
+      <File FileName="Assets\Scripts\HealthManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\LevelManager.cs" Line="47" Column="3" />
+      <File FileName="Assets\Scripts\CheckPoint.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

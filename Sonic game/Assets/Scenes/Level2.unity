@@ -1638,7 +1638,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4104046536839730, guid: 7b4c8e26a59fee24485bf30d1a4445f7, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114250879690205786, guid: 7b4c8e26a59fee24485bf30d1a4445f7,
         type: 2}
@@ -8232,11 +8232,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!4 &651960209 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4621040700590718, guid: d6fdae6d15c0e8c48afbe5a0067099bc,
-    type: 2}
-  m_PrefabInternal: {fileID: 668902758}
 --- !u!1 &653365417
 GameObject:
   m_ObjectHideFlags: 0
@@ -8440,57 +8435,6 @@ Transform:
   m_Father: {fileID: 1794898173}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &668902758
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1443440609}
-    m_Modifications:
-    - target: {fileID: 4621040700590718, guid: d6fdae6d15c0e8c48afbe5a0067099bc, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -34.096188
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621040700590718, guid: d6fdae6d15c0e8c48afbe5a0067099bc, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.21292135
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621040700590718, guid: d6fdae6d15c0e8c48afbe5a0067099bc, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621040700590718, guid: d6fdae6d15c0e8c48afbe5a0067099bc, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621040700590718, guid: d6fdae6d15c0e8c48afbe5a0067099bc, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621040700590718, guid: d6fdae6d15c0e8c48afbe5a0067099bc, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621040700590718, guid: d6fdae6d15c0e8c48afbe5a0067099bc, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621040700590718, guid: d6fdae6d15c0e8c48afbe5a0067099bc, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114324697968981702, guid: d6fdae6d15c0e8c48afbe5a0067099bc,
-        type: 2}
-      propertyPath: healthManager
-      value: 
-      objectReference: {fileID: 692666362}
-    - target: {fileID: 1367689063971860, guid: d6fdae6d15c0e8c48afbe5a0067099bc, type: 2}
-      propertyPath: m_Name
-      value: spikes (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: d6fdae6d15c0e8c48afbe5a0067099bc, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &675554006
 GameObject:
   m_ObjectHideFlags: 0
@@ -8908,7 +8852,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4621040700590718, guid: d6fdae6d15c0e8c48afbe5a0067099bc, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: levelManager
@@ -11202,7 +11146,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4621040700590718, guid: d6fdae6d15c0e8c48afbe5a0067099bc, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: levelManager
@@ -14172,7 +14116,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4104046536839730, guid: 7b4c8e26a59fee24485bf30d1a4445f7, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114250879690205786, guid: 7b4c8e26a59fee24485bf30d1a4445f7,
         type: 2}
@@ -14430,7 +14374,6 @@ Transform:
   - {fileID: 187114856}
   - {fileID: 598328163}
   - {fileID: 396423424}
-  - {fileID: 651960209}
   - {fileID: 73865524}
   - {fileID: 167823662}
   - {fileID: 1385979163}
@@ -14595,7 +14538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b2fe3311f8c7524095c81423c6d3a73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Level2
+  levelToLoad: 
 --- !u!61 &1463256235
 BoxCollider2D:
   m_ObjectHideFlags: 0

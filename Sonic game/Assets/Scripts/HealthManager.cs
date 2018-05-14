@@ -5,35 +5,42 @@ using UnityEngine.UI;
 public class HealthManager : MonoBehaviour {
 
 	public int maxPlayerHealth;
-	public static int playerHelath;
+	public  int playerHelath;
 
-	Text text;
-	public LevelManager levelManager;
+	public  Text text;
+	public  LevelManager levelManager;
 
-	public bool isDead;
+	public  bool isDead;
 	// Use this for initialization
 	void Start () {
 		text = GetComponent<Text> ();
 		playerHelath = maxPlayerHealth;
+		text.text = "" + playerHelath;
 		isDead = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (playerHelath <= 0 && !isDead) {
-			playerHelath = 0;
-			levelManager.RespawnPlayer ();
-			isDead = true;
-		}
-		text.text = "" + playerHelath;
+		
 	}
 
-	public static void HurtPlayer(int damageToGive){
+	public void HurtPlayer(int damageToGive){
 		playerHelath -= damageToGive;
+
+		if (playerHelath <= 0 && !isDead) {
+			playerHelath = 0;
+			text.text = "" + playerHelath;
+			levelManager.RespawnPlayer ();
+			isDead = true;
+
+		} else {
+			text.text = "" + playerHelath;
+		}
 	}
 
 	public void FullHelath(){
 		
 		playerHelath = maxPlayerHealth;
+		text.text = "" + playerHelath;
 	}
 }

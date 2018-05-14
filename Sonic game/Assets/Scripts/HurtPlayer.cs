@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HurtPlayer : MonoBehaviour {
 	public int damageToGive;
+	public HealthManager healthManager;
 	// Use this for initialization
 	void Start () {
 		
@@ -18,7 +19,7 @@ public class HurtPlayer : MonoBehaviour {
 	
 		if (col.name == "Player") {
 		
-			HealthManager.HurtPlayer (damageToGive);
+			healthManager.HurtPlayer (damageToGive);
 		}
 	}
 }

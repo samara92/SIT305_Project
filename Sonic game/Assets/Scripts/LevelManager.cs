@@ -19,6 +19,7 @@ public class LevelManager : MonoBehaviour {
 
 	private float gravityStore;
 	public HealthManager healthManager;
+	public PolygonCollider2D PlayerGO;
 	// Use this for initialization
 	void Start () {
 		
@@ -43,9 +44,11 @@ public class LevelManager : MonoBehaviour {
 //		gravityStore = player.GetComponent<Rigidbody2D> ().gravityScale;
 //		player.GetComponent<Rigidbody2D> ().gravityScale = 0f;
 //		player.GetComponent<Rigidbody2D> ().velocity = Vector2.zero;
-
-		SocreManager.AddPoints (-deathPanalty);
 		player.enabled = false;
+		PlayerGO.enabled = false;
+		healthManager.isDead = false;
+		SocreManager.AddPoints (-deathPanalty);
+
 		player.GetComponent<Renderer> ().enabled = false;
 		camera.isFollowing = false;
 		Debug.Log ("Player respawn !!!! xxxx");
@@ -53,6 +56,7 @@ public class LevelManager : MonoBehaviour {
 		//player.GetComponent<Rigidbody2D> ().gravityScale = gravityStore;
 		player.transform.position = currentCheckPoint.transform.position;
 		player.enabled = true;
+		PlayerGO.enabled = true;
 		player.GetComponent<Renderer> ().enabled = true;
 		healthManager.FullHelath ();
 		healthManager.isDead = false;

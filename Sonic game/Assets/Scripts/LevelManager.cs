@@ -14,6 +14,9 @@ public class LevelManager : MonoBehaviour {
 	public float respawnDelay;
 
 	public int deathPanalty;
+
+	public CameraControll camera;
+
 	private float gravityStore;
 	// Use this for initialization
 	void Start () {
@@ -35,21 +38,25 @@ public class LevelManager : MonoBehaviour {
 		//enable and play death partical
 		respawnPartical.SetActive(false);
 		deathPartical.SetActive (true);
-		gravityStore = player.GetComponent<Rigidbody2D> ().gravityScale;
-		player.GetComponent<Rigidbody2D> ().gravityScale = 0f;
+
+//		gravityStore = player.GetComponent<Rigidbody2D> ().gravityScale;
+//		player.GetComponent<Rigidbody2D> ().gravityScale = 0f;
+//		player.GetComponent<Rigidbody2D> ().velocity = Vector2.zero;
+
 		SocreManager.AddPoints (-deathPanalty);
-		player.GetComponent<Rigidbody2D> ().velocity = Vector2.zero;
 		player.enabled = false;
 		player.GetComponent<Renderer> ().enabled = false;
+		camera.isFollowing = false;
 		Debug.Log ("Player respawn !!!! xxxx");
 		yield return new WaitForSeconds (respawnDelay);
-		player.GetComponent<Rigidbody2D> ().gravityScale = gravityStore;
+		//player.GetComponent<Rigidbody2D> ().gravityScale = gravityStore;
 		player.transform.position = currentCheckPoint.transform.position;
 		player.enabled = true;
 		player.GetComponent<Renderer> ().enabled = true;
 		//disable death partical
 		//enable and play respawn partical
 		respawnPartical.SetActive(true);
+		camera.isFollowing = true;
 		deathPartical.SetActive (false);
 	}
 }

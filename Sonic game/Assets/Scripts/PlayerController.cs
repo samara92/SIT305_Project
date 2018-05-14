@@ -17,8 +17,12 @@ public class PlayerController : MonoBehaviour {
 
 	//Player animation
 	private Animator playerAnim;
+
 	public Transform firePoint;
 	public GameObject fireBall;
+
+	public float shotDelay;
+	private float shotDelayCounter;
 	void Start(){
 		playerAnim = GetComponent<Animator> ();
 	}
@@ -72,7 +76,19 @@ public class PlayerController : MonoBehaviour {
 
 		if (Input.GetKeyDown (KeyCode.L)) {
 			Instantiate (fireBall,firePoint.position,firePoint.rotation);
+			shotDelayCounter = shotDelay;
 		}
+		if (Input.GetKey (KeyCode.L)) {
+			shotDelayCounter -= Time.deltaTime;
+
+			if (shotDelayCounter <= 0) {
+			
+				shotDelayCounter = shotDelay;
+				Instantiate (fireBall,firePoint.position,firePoint.rotation);
+			}
+
+		}
+
 	}
 
 	public void Jump(){

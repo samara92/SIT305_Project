@@ -93,6 +93,8 @@ MonoBehaviour:
   player: {fileID: 0}
   deathEffect: {fileID: 1898360445642232, guid: 49158c9bf749d9d47a302192a0c7f9f9,
     type: 2}
+  pointsForKill: 100
+  damageToGive: 1
 --- !u!212 &212923427022800318
 SpriteRenderer:
   m_ObjectHideFlags: 1

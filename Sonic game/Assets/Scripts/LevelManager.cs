@@ -18,6 +18,7 @@ public class LevelManager : MonoBehaviour {
 	public CameraControll camera;
 
 	private float gravityStore;
+	public HealthManager healthManager;
 	// Use this for initialization
 	void Start () {
 		
@@ -53,6 +54,8 @@ public class LevelManager : MonoBehaviour {
 		player.transform.position = currentCheckPoint.transform.position;
 		player.enabled = true;
 		player.GetComponent<Renderer> ().enabled = true;
+		healthManager.FullHelath ();
+		healthManager.isDead = false;
 		//disable death partical
 		//enable and play respawn partical
 		respawnPartical.SetActive(true);

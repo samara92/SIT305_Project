@@ -7,6 +7,8 @@ public class FireBallController : MonoBehaviour {
 	public float speed;
 	public PlayerController player;
 	public GameObject deathEffect;
+	public int pointsForKill;
+	public int damageToGive;
 	// Use this for initialization
 	void Start () {
 		player = FindObjectOfType<PlayerController> ();
@@ -27,10 +29,11 @@ public class FireBallController : MonoBehaviour {
 
 		if (col.tag == "Enemy") {
 		
-			Instantiate (deathEffect,col.transform.position,col.transform.rotation);
+			//Instantiate (deathEffect,col.transform.position,col.transform.rotation);
+			//Destroy (col.gameObject);
+			//SocreManager.AddPoints (pointsForKill);
 
-			//TO DO: Optimize code
-			Destroy (col.gameObject);
+			col.GetComponent<EnemyHealthManager> ().GivenDamage (damageToGive);
 		}
 		//TO DO: Optimize code
 		Destroy (gameObject);

@@ -15,12 +15,14 @@ public class PlayerController : MonoBehaviour {
 	private bool grounded;
 	private bool doubleJump;
 
+	//Player animation
+	private Animator playerAnim;
+	public Transform firePoint;
+	public GameObject fireBall;
 	void Start(){
 		playerAnim = GetComponent<Animator> ();
 	}
 
-	//Player animation
-	private Animator playerAnim;
 	void FixedUpdate(){
 	
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundCheckRadius, whatIsGround);
@@ -67,6 +69,10 @@ public class PlayerController : MonoBehaviour {
 			transform.localScale = new Vector3 (1f,1f,1f);
 		else if(playerRigidBody2DVelocity.x <0)
 			transform.localScale = new Vector3 (-1f,1f,1f);
+
+		if (Input.GetKeyDown (KeyCode.L)) {
+			Instantiate (fireBall,firePoint.position,firePoint.rotation);
+		}
 	}
 
 	public void Jump(){

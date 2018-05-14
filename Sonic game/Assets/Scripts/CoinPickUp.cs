@@ -13,6 +13,7 @@ public class CoinPickUp : MonoBehaviour {
 
 		SocreManager.AddPoints (pointToAdd);
 
+		//TO DO: this will effect performance
 		Destroy (gameObject);
 	}
 

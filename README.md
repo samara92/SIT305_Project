@@ -2,8 +2,8 @@
 # Name: Sameera Dinusha Priyananda
 # SID:215158268
 # Project - Sonic Game App
-# Device Platform - Anndroid
-# This game created using by Unity Software.
+# Device Platform - Android and iOS
+# This game created using by Unity Software.(version 2017.1.0f3)
   for run and test this game app in computer, you must need;
     - the latest version of Unity software in your computer
 # Instructions for run the game in Android device:
@@ -18,18 +18,17 @@
   - Click Build And Run.
 # Directory Layout
   - Sonic Game 
-  - game_icons
   - Library
+  - obj
   - ProjectSettings
-  - Temp
-  - UnityPackageManager
   - Assets 
-          	*font folder -> all the fonts that used for the game
+          	*Animations folder -> all the animations that used for the game
 	        *prefebs -> all the game template objects that create new instances of the same object in the scene
           	*scenes -> contains game environment and menus of the game
           	*scripts -> all the code files that conect with the internal workings of the game
-          	*sprite -> all the 2D objects that used for characters,props,projectiles and other elements of the game
-            
+          	*Art -> all the object images that I used.
+		*Phy6Meterials -> 2D objects that I used
+		
             
 # Henry comments 27/April
 - This file still needs compile instructions, and directory explanation so I know where to find stuff.

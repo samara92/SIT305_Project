@@ -41,6 +41,9 @@ public class PlayerController : MonoBehaviour {
 
 		playerAnim.SetBool ("Grounded", grounded);
 
+
+
+		#if UNITY_2017_1_OR_NEWER 
 		if (Input.GetKeyDown (KeyCode.Space) && grounded) {
 		
 			Jump ();
@@ -51,20 +54,39 @@ public class PlayerController : MonoBehaviour {
 			Jump ();
 			doubleJump = true;
 		}
-
-		moveVelocity = 0f;
-
+		//moveVelocity = 0f;
 		if (Input.GetKey (KeyCode.A)) {
 
 			//GetComponent<Rigidbody2D> ().velocity = new Vector2 (-movmentSpeed, playerRigidBody2DVelocity.y);
-			moveVelocity = - movmentSpeed;
+			Move(-1);
 		}
 
 		if (Input.GetKey (KeyCode.D)) {
 
 			//GetComponent<Rigidbody2D> ().velocity = new Vector2 (movmentSpeed, playerRigidBody2DVelocity.y);
-			moveVelocity = movmentSpeed;
+			Move(1);
 		}
+		if(Input.GetKeyUp(KeyCode.D)|| Input.GetKeyUp(KeyCode.A)){
+			Move(0);
+		}
+
+		if (Input.GetKeyDown (KeyCode.L)) {
+			//Instantiate (fireBall,firePoint.position,firePoint.rotation);
+			Fire();
+			shotDelayCounter = shotDelay;
+		}
+		if (Input.GetKey (KeyCode.L)) {
+			shotDelayCounter -= Time.deltaTime;
+
+			if (shotDelayCounter <= 0) {
+
+				shotDelayCounter = shotDelay;
+				Fire ();
+				//Instantiate (fireBall,firePoint.position,firePoint.rotation);
+			}
+
+		}
+		#endif
 
 		GetComponent<Rigidbody2D> ().velocity = new Vector2 (moveVelocity, GetComponent<Rigidbody2D> ().velocity.y);
 
@@ -74,25 +96,39 @@ public class PlayerController : MonoBehaviour {
 		else if(playerRigidBody2DVelocity.x <0)
 			transform.localScale = new Vector3 (-1f,1f,1f);
 
-		if (Input.GetKeyDown (KeyCode.L)) {
-			Instantiate (fireBall,firePoint.position,firePoint.rotation);
-			shotDelayCounter = shotDelay;
-		}
-		if (Input.GetKey (KeyCode.L)) {
-			shotDelayCounter -= Time.deltaTime;
 
-			if (shotDelayCounter <= 0) {
-			
-				shotDelayCounter = shotDelay;
-				Instantiate (fireBall,firePoint.position,firePoint.rotation);
-			}
 
-		}
+	}
 
+	public void Move(float moveInput){
+	
+		moveVelocity = movmentSpeed * moveInput;
+	}
+
+	public void Fire(){
+		Instantiate (fireBall,firePoint.position,firePoint.rotation);
+	}
+
+	public void PowerUp(){
+	
+	//TO DO: power Up
 	}
 
 	public void Jump(){
 		
-		GetComponent<Rigidbody2D> ().velocity = new Vector2 (playerRigidBody2DVelocity.x, jumpHeight);
+		//GetComponent<Rigidbody2D> ().velocity = new Vector2 (playerRigidBody2DVelocity.x, jumpHeight);
+	
+		if (grounded) {
+
+			//Jump ();
+			GetComponent<Rigidbody2D> ().velocity = new Vector2 (playerRigidBody2DVelocity.x, jumpHeight);
+		}
+
+		if (!grounded && !doubleJump) {
+
+			//Jump ();
+			GetComponent<Rigidbody2D> ().velocity = new Vector2 (playerRigidBody2DVelocity.x, jumpHeight);
+			doubleJump = true;
+		}
 	}
 }

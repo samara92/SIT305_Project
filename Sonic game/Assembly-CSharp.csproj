@@ -51,6 +51,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BossWall.cs" />
+     <Compile Include="Assets\Scripts\BossAI.cs" />
+     <Compile Include="Assets\Scripts\BossHealthManager.cs" />
      <Compile Include="Assets\Scripts\CameraControll.cs" />
      <Compile Include="Assets\Scripts\CheckPoint.cs" />
      <Compile Include="Assets\Scripts\CoinPickUp.cs" />
@@ -60,6 +63,7 @@
      <Compile Include="Assets\Scripts\EnemyHealthManager.cs" />
      <Compile Include="Assets\Scripts\EnemyShoot.cs" />
      <Compile Include="Assets\Scripts\FireBallController.cs" />
+     <Compile Include="Assets\Scripts\GameWon.cs" />
      <Compile Include="Assets\Scripts\HealthManager.cs" />
      <Compile Include="Assets\Scripts\HealthPickUp.cs" />
      <Compile Include="Assets\Scripts\HurtPlayer.cs" />

@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyShoot : MonoBehaviour {
 	
 	public Transform firePoint;
+	public Transform firePoint2;
 	public GameObject fireBall;
 
 	// Use this for initialization
@@ -23,6 +24,7 @@ public class EnemyShoot : MonoBehaviour {
 
 			Debug.Log (col.name + "Soot Player");
 			Instantiate (fireBall,firePoint.position,firePoint.rotation);
+			Instantiate (fireBall, firePoint2.position, firePoint2.rotation);
 
 		}
 	}

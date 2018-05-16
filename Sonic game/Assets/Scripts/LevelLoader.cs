@@ -35,4 +35,8 @@ public class LevelLoader : MonoBehaviour {
 			playerInZone = false;
 		}
 	}
+
+	public void EnableWon(){
+		
+	}
 }

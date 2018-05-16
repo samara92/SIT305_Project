@@ -7,7 +7,7 @@ public class HurtPlayer : MonoBehaviour {
 	public HealthManager healthManager;
 	// Use this for initialization
 	void Start () {
-		
+		healthManager = FindObjectOfType<HealthManager> ();
 	}
 	
 	// Update is called once per frame

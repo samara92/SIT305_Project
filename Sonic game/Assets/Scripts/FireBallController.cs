@@ -35,7 +35,9 @@ public class FireBallController : MonoBehaviour {
 
 			col.GetComponent<EnemyHealthManager> ().GivenDamage (damageToGive);
 		}
-
+		if (col.tag == "Boss") {
+			col.GetComponent<BossHealthManager> ().GivenDamage (damageToGive);
+		}
 		//TO DO: Optimize code
 		Destroy (gameObject);
 	}

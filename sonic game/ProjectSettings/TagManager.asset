@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Ground
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Collectibles
   - Door
   - EnemyProjectile
-  - 
+  - Enemy
   - 
   - 
   - 

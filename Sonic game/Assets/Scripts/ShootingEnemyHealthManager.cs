@@ -21,7 +21,7 @@ public class ShootingEnemyHealthManager : MonoBehaviour {
 			Instantiate (deathEffect, transform.position, transform.rotation);
 			SocreManager.AddPoints (pointsOnDeath);
 			//TO DO: optimise
-			Destroy (gameObject.GetComponentInParent<GameObject>());
+			Destroy (gameObject);
 		
 		}
 	}

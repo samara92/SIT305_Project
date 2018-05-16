@@ -9,7 +9,8 @@ public class SocreManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		text = GetComponent<Text> ();
-		score = 0;
+		//score = 0;
+		score = PlayerPrefs.GetInt("CurrentPlayerScore",0);
 	}
 	
 	// Update is called once per frame
@@ -24,9 +25,11 @@ public class SocreManager : MonoBehaviour {
 	public static void AddPoints(int pointsToAdd){
 	
 		score += pointsToAdd;
+		PlayerPrefs.SetInt ("CurrentPlayerScore",score);
 	}
 
 	public static void Reset(){
 		score = 0;
+		PlayerPrefs.SetInt ("CurrentPlayerScore",score);
 	}
 }

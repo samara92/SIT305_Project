@@ -15,7 +15,8 @@ public class HealthManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		text = GetComponent<Text> ();
-		playerHelath = maxPlayerHealth;
+		//playerHelath = maxPlayerHealth;
+		playerHelath = PlayerPrefs.GetInt("PlayerCurrentHealth");
 		text.text = "" + playerHelath;
 		isDead = false;
 	}
@@ -27,7 +28,7 @@ public class HealthManager : MonoBehaviour {
 
 	public void HurtPlayer(int damageToGive){
 		playerHelath -= damageToGive;
-
+		PlayerPrefs.SetInt("PlayerCurrentHealth",playerHelath);
 		if (playerHelath <= 0 && !isDead) {
 			playerHelath = 0;
 			lifeSystem.TakeLife ();
@@ -44,5 +45,6 @@ public class HealthManager : MonoBehaviour {
 		
 		playerHelath = maxPlayerHealth;
 		text.text = "" + playerHelath;
+		PlayerPrefs.SetInt("PlayerCurrentHealth",playerHelath);
 	}
 }

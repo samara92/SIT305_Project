@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class LifeManager : MonoBehaviour {
 
-	public int startLives;
+	//public int startLives;
 	private int lifeCounter;
 	private Text txtLife;
 
@@ -13,7 +13,7 @@ public class LifeManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		txtLife = GetComponent<Text> ();
-		lifeCounter = startLives;
+		lifeCounter = PlayerPrefs.GetInt("playerCurrentLives");
 		txtLife.text = "x " + lifeCounter;
 	}
 	
@@ -30,10 +30,12 @@ public class LifeManager : MonoBehaviour {
 	
 		lifeCounter ++;
 		txtLife.text = "x " + lifeCounter;
+		PlayerPrefs.SetInt ("playerCurrentLives", lifeCounter);
 	}
 
 	public void TakeLife(){
 		lifeCounter--;
 		txtLife.text = "x " + lifeCounter;
+		PlayerPrefs.SetInt ("playerCurrentLives", lifeCounter);
 	}
 }

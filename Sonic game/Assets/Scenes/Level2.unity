@@ -2061,7 +2061,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610333f4cc9000147922c95978d03520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startLives: 6
   gameOverScreen: {fileID: 1424748630}
   player: {fileID: 368554182}
 --- !u!114 &191643320
@@ -8962,7 +8961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e919cbca7f9f60d4b91020448ea5d818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPlayerHealth: 5
+  maxPlayerHealth: 6
   playerHelath: 0
   text: {fileID: 0}
   levelManager: {fileID: 1616199293}
@@ -11397,6 +11396,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 386674ed88859a34087da6a86aa83435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerLives: 0
+  playerHealth: 0
 --- !u!4 &966831295
 Transform:
   m_ObjectHideFlags: 0

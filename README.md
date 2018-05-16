@@ -27,7 +27,7 @@
           	*scenes -> contains game environment and menus of the game
           	*scripts -> all the code files that conect with the internal workings of the game
           	*Art -> all the object images that I used.
-		*Phy6Meterials -> 2D objects that I used
+		*Phy6Meterials -> physics material that attached to the player to reduce friction. Removing friction will reduce the 				drag amount of the player and ground.
 		
             
 # Henry comments 27/April

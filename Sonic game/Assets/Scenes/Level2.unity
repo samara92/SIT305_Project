@@ -628,7 +628,7 @@ GameObject:
   - component: {fileID: 98037851}
   - component: {fileID: 98037850}
   m_Layer: 0
-  m_Name: Health
+  m_Name: Life
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -662,7 +662,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.75714284, y: 0.64285713}
+    oldSize: {x: 0.67142856, y: 0.67142856}
     newSize: {x: 0.75714284, y: 0.64285713}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -703,7 +703,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c69db9569d43caf4bb4aeb0c6c33df8b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 46895c15e2f8dce4194fdb35d982fce3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9195,7 +9195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxPlayerHealth: 6
   playerHelath: 0
-  text: {fileID: 0}
+  healthBar: {fileID: 0}
   levelManager: {fileID: 1616199293}
   isDead: 0
   lifeSystem: {fileID: 191643319}

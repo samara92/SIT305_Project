@@ -7,17 +7,21 @@ public class HealthManager : MonoBehaviour {
 	public int maxPlayerHealth;
 	public  int playerHelath;
 
-	public  Text text;
+	//public  Text text;
+	public Slider healthBar;
+
 	public  LevelManager levelManager;
 
 	public  bool isDead;
 	public LifeManager lifeSystem;
 	// Use this for initialization
 	void Start () {
-		text = GetComponent<Text> ();
+		//text = GetComponent<Text> ();
+		healthBar = GetComponent<Slider>();
 		//playerHelath = maxPlayerHealth;
 		playerHelath = PlayerPrefs.GetInt("PlayerCurrentHealth");
-		text.text = "" + playerHelath;
+		healthBar.value = playerHelath;
+		//text.text = "" + playerHelath;
 		isDead = false;
 	}
 	
@@ -32,19 +36,26 @@ public class HealthManager : MonoBehaviour {
 		if (playerHelath <= 0 && !isDead) {
 			playerHelath = 0;
 			lifeSystem.TakeLife ();
-			text.text = "" + playerHelath;
+			//text.text = "" + playerHelath;
+			healthBar.value = playerHelath;
 			levelManager.RespawnPlayer ();
 			isDead = true;
 
 		} else {
-			text.text = "" + playerHelath;
+			//text.text = "" + playerHelath;
+			if (playerHelath > maxPlayerHealth) {
+				
+				playerHelath = maxPlayerHealth;
+			}
+			healthBar.value = playerHelath;
 		}
 	}
 
 	public void FullHelath(){
 		
 		playerHelath = maxPlayerHealth;
-		text.text = "" + playerHelath;
+		//text.text = "" + playerHelath;
+		healthBar.value = playerHelath;
 		PlayerPrefs.SetInt("PlayerCurrentHealth",playerHelath);
 	}
 }

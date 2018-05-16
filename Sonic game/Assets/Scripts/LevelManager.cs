@@ -47,6 +47,7 @@ public class LevelManager : MonoBehaviour {
 		player.enabled = false;
 		PlayerGO.enabled = false;
 		healthManager.isDead = false;
+		player.Move (0);
 		SocreManager.AddPoints (-deathPanalty);
 
 		player.GetComponent<Renderer> ().enabled = false;

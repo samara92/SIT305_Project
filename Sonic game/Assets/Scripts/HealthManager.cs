@@ -11,6 +11,7 @@ public class HealthManager : MonoBehaviour {
 	public  LevelManager levelManager;
 
 	public  bool isDead;
+	public LifeManager lifeSystem;
 	// Use this for initialization
 	void Start () {
 		text = GetComponent<Text> ();
@@ -29,6 +30,7 @@ public class HealthManager : MonoBehaviour {
 
 		if (playerHelath <= 0 && !isDead) {
 			playerHelath = 0;
+			lifeSystem.TakeLife ();
 			text.text = "" + playerHelath;
 			levelManager.RespawnPlayer ();
 			isDead = true;

@@ -2,38 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireBallController : MonoBehaviour {
+public class EnemyFireBall : MonoBehaviour {
 
 	public float speed;
-	public PlayerController player;
-	public GameObject deathEffect;
-	public int pointsForKill;
+	public GameObject Enemy;
+	public HealthManager healthManager;
 	public int damageToGive;
 	// Use this for initialization
 	void Start () {
-		player = FindObjectOfType<PlayerController> ();
-		if (player.transform.localScale.x < 0)
+		if (speed < 0) {
+			speed = speed * -1;
+		}
+		if (Enemy.transform.localScale.x > 0) {
+			Debug.Log ("right");
 			speed = -speed;
+
+		}
 	}
 	void FixedUpdate(){
-	
+		
 		GetComponent<Rigidbody2D> ().velocity = new Vector2 (speed, GetComponent<Rigidbody2D> ().velocity.y);
 	}
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
 
 
-		if (col.tag == "Enemy") {
-		
+		if (col.tag == "Player") {
+
 			//Instantiate (deathEffect,col.transform.position,col.transform.rotation);
 			//Destroy (col.gameObject);
 			//SocreManager.AddPoints (pointsForKill);
+			healthManager.HurtPlayer(damageToGive);
 
-			col.GetComponent<EnemyHealthManager> ().GivenDamage (damageToGive);
 		}
 
 		//TO DO: Optimize code

@@ -134,7 +134,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 5f2ad81aa8994e8fbe25d1e57afe6773 UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
-dc60af7e3c0c85877672241650f7f336 Assembly-CSharp.dll:.HealthManager
+31b203a5a8d71c85e9de111d2c19cf82 Assembly-CSharp.dll:.HealthManager
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
@@ -142,7 +142,11 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
 71a4d3f59931178965ef080f0c906376 Assembly-CSharp.dll:.LevelManager
 d6dd3c910a81e36e5112d50cd919f0be Assembly-CSharp.dll:.PlayerController
-d23ef3b3d67c016ce31b3990e9ad1f4a Assembly-CSharp.dll:.CameraControll
-f68905184076dee7b0406a3fb92aa6db Assembly-CSharp.dll:.Mainmenu
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SocreManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TouchControlls
+d23ef3b3d67c016ce31b3990e9ad1f4a Assembly-CSharp.dll:.CameraControll
+4aed9425351a662c653784a8275b5723 Assembly-CSharp.dll:.HealthPickUp
+d8800117ec2e01e09d72af107d6db570 Assembly-CSharp.dll:.Mainmenu
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SocreManager
+608454bba8ae4b7580ce33d7e0a2f8b9 Assembly-CSharp.dll:.EnemyShoot
+89d7f6fe89c3cfc13eae890efb6bef85 Assembly-CSharp.dll:.EnemyFireBall
+817c98bb8715725968936dfd9aacc2ee Assembly-CSharp.dll:.ShootingEnemyHealthManager

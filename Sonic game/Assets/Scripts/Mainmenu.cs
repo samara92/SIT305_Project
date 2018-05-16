@@ -7,7 +7,7 @@ public class Mainmenu : MonoBehaviour {
 	public int playerLives;
 
 	public int playerHealth;
-
+	public GameObject pauseMenu;
 	public void NewGame(){
 		PlayerPrefs.SetInt ("playerCurrentLives",playerLives);
 		PlayerPrefs.SetInt ("CurrentPlayerScore",0);
@@ -30,5 +30,14 @@ public class Mainmenu : MonoBehaviour {
 		PlayerPrefs.SetInt ("playerCurrentLives",playerLives);
 		PlayerPrefs.SetInt ("CurrentPlayerScore",0);
 		SceneManager.LoadScene (sceneName);
+	}
+
+	public void GamePause(){
+		pauseMenu.SetActive (true);
+		Time.timeScale = 0;
+	}
+	public void GameUnPause(){
+		Time.timeScale = 1;
+		pauseMenu.SetActive (false);
 	}
 }

@@ -56,7 +56,9 @@
      <Compile Include="Assets\Scripts\CoinPickUp.cs" />
      <Compile Include="Assets\Scripts\Deadly.cs" />
      <Compile Include="Assets\Scripts\EnemyAI.cs" />
+     <Compile Include="Assets\Scripts\EnemyFireBall.cs" />
      <Compile Include="Assets\Scripts\EnemyHealthManager.cs" />
+     <Compile Include="Assets\Scripts\EnemyShoot.cs" />
      <Compile Include="Assets\Scripts\FireBallController.cs" />
      <Compile Include="Assets\Scripts\HealthManager.cs" />
      <Compile Include="Assets\Scripts\HealthPickUp.cs" />
@@ -67,6 +69,7 @@
      <Compile Include="Assets\Scripts\LifePickUp.cs" />
      <Compile Include="Assets\Scripts\Mainmenu.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\ShootingEnemyHealthManager.cs" />
      <Compile Include="Assets\Scripts\SocreManager.cs" />
      <Compile Include="Assets\Scripts\TouchControlls.cs" />
  <Reference Include="UnityEngine.UI">

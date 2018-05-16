@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 392}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 685
-  m_MinSize: {x: 950, y: 392}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 342}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 85
+  controlID: 23
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 44
+  controlID: 24
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -181,8 +181,8 @@ MonoBehaviour:
     y: 221
     width: 651
     height: 414
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 12}
@@ -368,14 +368,14 @@ MonoBehaviour:
     width: 649
     height: 200
   m_SceneLighting: 1
-  lastFramingTime: 7873.014106148715
+  lastFramingTime: 9082.082694918023
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 8.243107, y: 0.19445843, z: 0}
+    m_Target: {x: 23.984392, y: 1.9309691, z: 0}
     speed: 2
-    m_Value: {x: 8.243107, y: 0.19445843, z: 0}
+    m_Value: {x: 23.984392, y: 1.9309691, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -402,9 +402,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.905468
+    m_Target: 12.930384
     speed: 2
-    m_Value: 9.905468
+    m_Value: 12.930384
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -573,28 +573,28 @@ MonoBehaviour:
     height: 614
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c2260000
+    m_SelectedIDs: c05d0400
     m_LastClickedID: 0
-    m_ExpandedIDs: 16cdfcff400cfdffd610fdff0a13fdff4e32fdff7438fdff064afdff8e54fdffe65ffdff8488fdff7091fdff6cacfdfffeb5fdff82b8fdff10e8fdffc2ecfdff8ceffdffb24ffeff5852feff4274feff6a6fffff766fffffea72ffff78f1ffff42f9ffff1afcffff00000000622a0000b82b00009c2d0000c82d0000d22d000062310000163e0000a84d00009c7a0000167e0000128e0000c0b700001cd4000062ed00008a060100f0070100
+    m_ExpandedIDs: 3018eeff2c19eeff5c26eeff4027eeff4228eeff9029eeff9829eeff1a0dfbff4a0dfbff9410fbffce2ffbff9e30fbff9e31fbffec32fbfff432fbff1e50fbffba5ffbff2461fbff4496fbff129afbff6eb1fbff209efcff08f3fcffde24fdff7c2efdffec36fdff063efdffb244fdff1847fdff0c82fdff309afdff9c9dfdff3cbbfdff48befdff60c5fdfffcc7fdffa6d2fdff16d7fdff84dbfdff12e3fdff72e7fdff54ebfdffeeedfdffaaf8fdff20fbfdfff0fffdff4429feffce30feff685dfeffe468feff3084feff288afeffc293feff50b5feffaabcfeff8af2feff4efefeffcc10ffffda17ffff922effff9a31ffff4666ffff5c71ffffa483ffff7e8effff5492ffff44a4ffff1ea7ffff48beffffdccbffffe2d3ffffa6e1ffffaee8ffffdaefffff4afaffff1afcffff000000006c2a000016360000a44100006a470000c0480000f65200006c5e0000cc5f0000be690000146b0000fa7a00005a7c00004c860000fc8b00005c8d0000b091000006930000269d0000869e0000a8a20000daa2000030a4000084a50000dcb90000ccca000072d0000026d60000ccdb000016e70000b2ec00005af5000018fe0000ec1501005c170100d01e0100f6270100de4d010022880100d88801007c8c0100e28d0100829e010090b0010078f201006a0302004c0402005612020076180200264002009c410200a04102008a4202000a430200
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: snail
+      m_OriginalName: snail
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -324326
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
   m_ExpandedScenes:
-  - MainMenu
+  - Boss Fight
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -646,9 +646,9 @@ MonoBehaviour:
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d0260000
-    m_LastClickedID: 9936
-    m_ExpandedIDs: 0000000030260000e026000000ca9a3bffffff7f
+    m_SelectedIDs: d2260000
+    m_LastClickedID: 9938
+    m_ExpandedIDs: 0000000032260000e226000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -676,7 +676,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000030260000e0260000
+    m_ExpandedIDs: 0000000032260000e2260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

@@ -8,6 +8,7 @@ public class Mainmenu : MonoBehaviour {
 
 	public int playerHealth;
 	public GameObject pauseMenu;
+	public GameObject gameoverMenu;
 	public void NewGame(){
 		PlayerPrefs.SetInt ("playerCurrentLives",playerLives);
 		PlayerPrefs.SetInt ("CurrentPlayerScore",0);
@@ -27,8 +28,11 @@ public class Mainmenu : MonoBehaviour {
 	}
 
 	public void Retry(string sceneName){
+		Time.timeScale = 1;
 		PlayerPrefs.SetInt ("playerCurrentLives",playerLives);
+		Debug.Log (playerLives + "Player Lives");
 		PlayerPrefs.SetInt ("CurrentPlayerScore",0);
+
 		SceneManager.LoadScene (sceneName);
 	}
 

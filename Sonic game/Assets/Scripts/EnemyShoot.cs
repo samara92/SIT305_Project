@@ -24,6 +24,8 @@ public class EnemyShoot : MonoBehaviour {
 
 			Debug.Log (col.name + "Soot Player");
 			Instantiate (fireBall,firePoint.position,firePoint.rotation);
+
+			if(firePoint2 != null)
 			Instantiate (fireBall, firePoint2.position, firePoint2.rotation);
 
 		}

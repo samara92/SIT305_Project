@@ -81,6 +81,7 @@ c63db43c730fa2cbb8ca07de15898cb6 UnityEngine.UI.dll:UnityEngine.UI.Toggle
 f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GamemanagerMenu
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 cac917711d0e84d412d48737b6fc9ae7 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 706b890efe0a474d76b40e459ddb3e76 UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -151,9 +152,8 @@ d6dd3c910a81e36e5112d50cd919f0be Assembly-CSharp.dll:.PlayerController
 d23ef3b3d67c016ce31b3990e9ad1f4a Assembly-CSharp.dll:.CameraControll
 276e900babf882574eb152fbce5a254e Assembly-CSharp.dll:.GameWon
 4aed9425351a662c653784a8275b5723 Assembly-CSharp.dll:.HealthPickUp
-d8800117ec2e01e09d72af107d6db570 Assembly-CSharp.dll:.Mainmenu
+626525dd0b13807d0e7da52fdf957ac3 Assembly-CSharp.dll:.Mainmenu
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SocreManager
 817c98bb8715725968936dfd9aacc2ee Assembly-CSharp.dll:.ShootingEnemyHealthManager
 12d5ced99eb616cb3d8e2b5bf15d4cca Assembly-CSharp.dll:.BossHealthManager
 4bb5e2454955c82885892050f7854557 Assembly-CSharp.dll:.AudioManager
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GamemanagerMenu

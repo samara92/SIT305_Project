@@ -147,7 +147,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
 71a4d3f59931178965ef080f0c906376 Assembly-CSharp.dll:.LevelManager
-d6dd3c910a81e36e5112d50cd919f0be Assembly-CSharp.dll:.PlayerController
+a7df6baaf5335f65b78e75d2bbb0fe7c Assembly-CSharp.dll:.PlayerController
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TouchControlls
 d23ef3b3d67c016ce31b3990e9ad1f4a Assembly-CSharp.dll:.CameraControll
 276e900babf882574eb152fbce5a254e Assembly-CSharp.dll:.GameWon
@@ -157,3 +157,5 @@ d23ef3b3d67c016ce31b3990e9ad1f4a Assembly-CSharp.dll:.CameraControll
 817c98bb8715725968936dfd9aacc2ee Assembly-CSharp.dll:.ShootingEnemyHealthManager
 12d5ced99eb616cb3d8e2b5bf15d4cca Assembly-CSharp.dll:.BossHealthManager
 4bb5e2454955c82885892050f7854557 Assembly-CSharp.dll:.AudioManager
+241cb30f8ae507d8626a9b39883c7d62 Assembly-CSharp.dll:.PowerManager
+b778a7cf72e93c5145cd838116c6bce5 Assembly-CSharp.dll:.coundown

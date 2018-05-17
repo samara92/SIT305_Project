@@ -30,4 +30,13 @@ public class TouchControlls : MonoBehaviour {
 		thePlayer.Jump ();
 
 	}
+	public void PowerUp(){
+	
+		thePlayer.speedPowerUp = true;
+	}
+
+	public void PowerUpUnPress(){
+
+		thePlayer.speedPowerUp = false;
+	}
 }

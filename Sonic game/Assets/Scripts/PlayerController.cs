@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour {
 
 	public float shotDelay;
 	private float shotDelayCounter;
+
+	public bool speedPowerUp = false;
 	void Start(){
 		playerAnim = GetComponent<Animator> ();
 	}
@@ -87,7 +89,22 @@ public class PlayerController : MonoBehaviour {
 
 		}
 		#endif
-
+		if (!speedPowerUp) {
+			playerAnim.SetBool ("PoweUp", false);
+		}
+		if (speedPowerUp) {
+			
+			GetComponent<Rigidbody2D> ().velocity = new Vector2 (moveVelocity*2, GetComponent<Rigidbody2D> ().velocity.y);
+			GetComponent<Rigidbody2D> ().gravityScale = 0;
+			GetComponent<PolygonCollider2D> ().enabled = false;
+			playerAnim.SetBool ("PoweUp", speedPowerUp);
+			if (playerRigidBody2DVelocity.x > 0)
+				transform.localScale = new Vector3 (1f,1f,1f);
+			else if(playerRigidBody2DVelocity.x <0)
+				transform.localScale = new Vector3 (-1f,1f,1f);
+		} else {
+			GetComponent<PolygonCollider2D> ().enabled = true;
+			GetComponent<Rigidbody2D> ().gravityScale = 5;
 		GetComponent<Rigidbody2D> ().velocity = new Vector2 (moveVelocity, GetComponent<Rigidbody2D> ().velocity.y);
 
 		playerAnim.SetFloat ("Speed", Mathf.Abs (playerRigidBody2DVelocity.x));
@@ -96,7 +113,7 @@ public class PlayerController : MonoBehaviour {
 		else if(playerRigidBody2DVelocity.x <0)
 			transform.localScale = new Vector3 (-1f,1f,1f);
 
-
+		}
 
 	}
 
@@ -117,7 +134,9 @@ public class PlayerController : MonoBehaviour {
 	public void Jump(){
 		
 		//GetComponent<Rigidbody2D> ().velocity = new Vector2 (playerRigidBody2DVelocity.x, jumpHeight);
-	
+		if(speedPowerUp){
+			return;
+		}
 		if (grounded) {
 
 			//Jump ();

@@ -14,7 +14,8 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 c24a21b131bfa67be1162db2cba4b52b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 6c072b39b3c68413bc432aaada417754 Assembly-CSharp.dll:.Deadly
 20c5b8f1fc21aaa0bbb1fb1a635fe31b Assembly-CSharp.dll:.LevelLoader
-608454bba8ae4b7580ce33d7e0a2f8b9 Assembly-CSharp.dll:.EnemyShoot
+42acc7332d32801094497dcc5ff268b4 Assembly-CSharp.dll:.LevelAnimationStop
+3fcc146fe95474dc36e47cf915476e69 Assembly-CSharp.dll:.EnemyShoot
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -107,6 +108,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+469431dae1c1a0e04fc5c20f592070ff Assembly-CSharp.dll:.BossAI
 6c072b39b3c68413bc432aaada417754 Assembly-CSharp.dll:.CheckPoint
 817c98bb8715725968936dfd9aacc2ee Assembly-CSharp.dll:.EnemyHealthManager
 d09edd360fe8623aaba91de632c507d8 Assembly-CSharp.dll:.CoinPickUp
@@ -117,6 +119,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
 469431dae1c1a0e04fc5c20f592070ff Assembly-CSharp.dll:.EnemyAI
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BossWall
 6484f300eafa27d0b1fcd123ad502a59 Assembly-CSharp.dll:.FireBallController
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -146,8 +149,11 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 d6dd3c910a81e36e5112d50cd919f0be Assembly-CSharp.dll:.PlayerController
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TouchControlls
 d23ef3b3d67c016ce31b3990e9ad1f4a Assembly-CSharp.dll:.CameraControll
+276e900babf882574eb152fbce5a254e Assembly-CSharp.dll:.GameWon
 4aed9425351a662c653784a8275b5723 Assembly-CSharp.dll:.HealthPickUp
 d8800117ec2e01e09d72af107d6db570 Assembly-CSharp.dll:.Mainmenu
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SocreManager
 817c98bb8715725968936dfd9aacc2ee Assembly-CSharp.dll:.ShootingEnemyHealthManager
 12d5ced99eb616cb3d8e2b5bf15d4cca Assembly-CSharp.dll:.BossHealthManager
+4bb5e2454955c82885892050f7854557 Assembly-CSharp.dll:.AudioManager
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GamemanagerMenu

@@ -51,7 +51,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AudioManager.cs" />
      <Compile Include="Assets\BossWall.cs" />
+     <Compile Include="Assets\GamemanagerMenu.cs" />
+     <Compile Include="Assets\LevelAnimationStop.cs" />
      <Compile Include="Assets\Scripts\BossAI.cs" />
      <Compile Include="Assets\Scripts\BossHealthManager.cs" />
      <Compile Include="Assets\Scripts\CameraControll.cs" />

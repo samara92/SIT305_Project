@@ -1,10 +1,10 @@
 # Week 03 Design the game 
 # week 04 Design game background (in this week I used 3D game background)
 # week 05 Create first step of the game 
-          - create game world using 3D
+          create game world using 3D
 # week 06 create all the pages of the game 
-          - 1.create objects (House and Trees)
-          - create a player 
+          1.create objects (House and Trees)
+          2.create a player 
 # week 07 - start the cording using C#. 
           1.sonic character moving forward done
           2.jump function done

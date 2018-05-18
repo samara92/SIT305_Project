@@ -11,9 +11,9 @@
 # Instructions for run the game in Android device:
 you will need;
 
-	The latest version of Unity (available here)
+	Version 2017.1.0f3 of Unity or the latest version
 	An Android device running the latest version of Android
-	The Simple Mobile Placeholder project (available from the Asset Store)
+	The Simple Mobile Placeholder project (available from the UnityAsset Store)
 	
 	Open the project in Unity
 	make sure that you set up the SDK in your unity if not you need to download the SDK pack

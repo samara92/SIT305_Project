@@ -16,23 +16,38 @@
   - In Unity, open the Build Settings from the top menu (File > Build Settings).
   - Click Add Open Scenes to add the Main scene to the list of scenes that will be built.
   - Click Build And Run.
+  
+  # Instructions for run the game in IOS device:
+   you will need;
+   
+	A Mac computer running running OS X 10.11 or later
+	The latest version of Xcode (available from the Mac App Store)
+	Unity version 2017.1.0f3 or latest version of Unity
+	An iOS device
+	The Simple Mobile Placeholder project (available from the UnityAsset)
+	
+	now you need to go to switch platforms in Unity so that we can build our game for iOS.
+	Within Unity, open the Build Settings from the top menu (File > Build Settings).
+	Highlight iOS from the list of platforms on the left and choose Switch Platform at the bottom of the window.
+	Open the Build Settings from the top menu (File > Build Settings).
+	Click Add Open Scenes to add the Main scene to the list of scenes that will be built.
+	Click Build to build
+	Click the down arrow in the top right of the prompt to expand it, and then click New Folder.
+	When prompted to choose a name, enter "Builds" and click Create. This will create a new folder called “Builds” in the root directory for your project.
+	In the text input field marked Save As, enter "iOS" and click Save.
+  
 # Directory Layout
   - Sonic Game 
   - Library
   - obj
   - ProjectSettings
   - Assets 
-          	*Animations folder -> all the animations that used for the game
-	        *prefebs -> all the game template objects that create new instances of the same object in the scene
-          	*scenes -> contains game environment and menus of the game
-          	*scripts -> all the code files that conect with the internal workings of the game
-          	*Art -> all the object images that I used.
-		*Phy6Meterials -> physics material that attached to the player to reduce friction. Removing friction will reduce the 				drag amount of the player and ground.
+          	1.Animations folder -> all the animations that used for the game
+	        2.prefebs -> all the game template objects that create new instances of the same object in the scene
+          	3.scenes -> contains game environment and menus of the game
+          	4.scripts -> all the code files that conect with the internal workings of the game
+          	5.Art -> all the object images that I used.
+		6.Phy6Meterials -> physics material that attached to the player to reduce friction. Removing friction will reduce the 				drag amount of the player and ground.
 		
-            
-# Henry comments 27/April
-- This file still needs compile instructions, and directory explanation so I know where to find stuff.
-- Your changelog needs a lot of work
-- Your data hasn't progressed enough. You need to get to this very quickly, as you can't start building your game until you can at least load the levels/world of your game. So work on getting loading working (from data files) asap.
 
 

@@ -86,6 +86,7 @@ you will need;
 	In Xcode, choose Run (the "play" button).
   
 # Directory Layout
+
   - Sonic Game 
   - Library
   - obj
@@ -98,6 +99,11 @@ you will need;
 		4.scripts -> all the code files that conect with the internal workings of the game
 		5.Art -> all the object images that I used.
 		Phy6Meterials -> physics material that attached to the player to reduce friction. Removing friction will reduce the drag amount of the player and ground.
+		
+  - Sonic Game.apk (final game APK fikle. you can directly instrall this into your android mobile and play the game)
+		
+		
+
 		
 
 

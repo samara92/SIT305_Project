@@ -90,8 +90,9 @@ you will need;
   - Library
   - obj
   - ProjectSettings
-  - Assets 
-          	1.Animations folder -> all the animations that used for the game
+  - Assets; 
+    
+  		1.Animations folder -> all the animations that used for the game
 	        2.prefebs -> all the game template objects that create new instances of the same object in the scene
           	3.scenes -> contains game environment and menus of the game
           	4.scripts -> all the code files that conect with the internal workings of the game

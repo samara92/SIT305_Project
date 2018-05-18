@@ -101,6 +101,38 @@ you will need;
 		Phy6Meterials -> physics material that attached to the player to reduce friction. Removing friction will reduce the drag amount of the player and ground.
 		
   - Sonic Game.apk (final game APK fikle. you can directly instrall this into your android mobile and play the game)
+  
+  # API reference of my major public classes/functions/methods
+  
+ Used "public sealed class PlayerPrefs". 
+ On Android data is stored (persisted) on the device.The data is saved in SharedPreferences. C#/JavaScript, Android Java and Native code can all access the PlayerPrefs data. The PlayerPrefs data is physically stored in /data/data/pkg-name/shared_prefs/pkg-name.xml.
+ On iOS, PlayerPrefs are stored in /Library/Preferences/[bundle identifier].plist
+
+ Score,player health and player life count is added to player prefs in order to store them.Player prefs is storing values as key value pairs.
+
+My game used code samples;
+
+	public static int score;
+
+	void Start(){
+
+	score = PlayerPrefs.GetInt("CurrentPlayerScore",0);
+	}
+
+	Likewise, I stored 3 variables in this file.
+
+Setting a value e.g.: - 
+
+	PlayerPrefs.SetInt ("CurrentPlayerScore",score);
+	PlayerPrefs.SetInt("PlayerCurrentHealth",playerHelath);
+	PlayerPrefs.SetInt ("playerCurrentLives", lifeCounter);
+
+Getting a value e.g.: -
+
+	lifeCounter = PlayerPrefs.GetInt("playerCurrentLives");
+	PlayerPrefs.GetInt("CurrentPlayerScore");
+	PlayerPrefs.GetInt("PlayerCurrentHealth");
+
 		
 		
 

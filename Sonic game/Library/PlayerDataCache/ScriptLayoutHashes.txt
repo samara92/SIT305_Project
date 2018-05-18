@@ -94,6 +94,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 5667fb372c2b292ccdec2a31aaac98fa UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 5667fb372c2b292ccdec2a31aaac98fa UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 c24a21b131bfa67be1162db2cba4b52b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+f8cd0a9305e2a4a5b17033a424d8e7f8 Assembly-CSharp.dll:.PowerManager
 2f5d74bdc22d058060b498f764c9a8be Assembly-CSharp.dll:.HurtPlayer
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -153,9 +154,8 @@ d23ef3b3d67c016ce31b3990e9ad1f4a Assembly-CSharp.dll:.CameraControll
 276e900babf882574eb152fbce5a254e Assembly-CSharp.dll:.GameWon
 4aed9425351a662c653784a8275b5723 Assembly-CSharp.dll:.HealthPickUp
 626525dd0b13807d0e7da52fdf957ac3 Assembly-CSharp.dll:.Mainmenu
+b778a7cf72e93c5145cd838116c6bce5 Assembly-CSharp.dll:.coundown
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SocreManager
 817c98bb8715725968936dfd9aacc2ee Assembly-CSharp.dll:.ShootingEnemyHealthManager
 12d5ced99eb616cb3d8e2b5bf15d4cca Assembly-CSharp.dll:.BossHealthManager
 4bb5e2454955c82885892050f7854557 Assembly-CSharp.dll:.AudioManager
-241cb30f8ae507d8626a9b39883c7d62 Assembly-CSharp.dll:.PowerManager
-b778a7cf72e93c5145cd838116c6bce5 Assembly-CSharp.dll:.coundown

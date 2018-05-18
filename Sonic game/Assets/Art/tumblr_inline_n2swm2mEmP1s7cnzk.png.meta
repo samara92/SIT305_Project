@@ -1,12 +1,13 @@
 fileFormatVersion: 2
 guid: af7a012ba9ce8404c89da6950b568858
-timeCreated: 1526470730
+timeCreated: 1526525213
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Level_1
     21300002: Level_2
     21300004: Level_3
+    21300006: PowerUp
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -110,7 +111,7 @@ TextureImporter:
         width: 154
         height: 152
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -124,7 +125,7 @@ TextureImporter:
         width: 154
         height: 154
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -137,6 +138,20 @@ TextureImporter:
         y: 0
         width: 154
         height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PowerUp
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 0
+        width: 202
+        height: 156
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

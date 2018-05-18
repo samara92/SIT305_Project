@@ -79070,6 +79070,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpButton: {fileID: 1071271702}
+  powerUpImage: {fileID: 21300006, guid: af7a012ba9ce8404c89da6950b568858, type: 3}
+  animImage: {fileID: 1627706065}
+  GOpowerUpAnim: {fileID: 1932576961}
 --- !u!1 &1697472188
 GameObject:
   m_ObjectHideFlags: 0
@@ -82149,6 +82152,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpButton: {fileID: 1071271702}
+  powerUpImage: {fileID: 21300006, guid: af7a012ba9ce8404c89da6950b568858, type: 3}
+  animImage: {fileID: 1627706065}
+  GOpowerUpAnim: {fileID: 1932576961}
 --- !u!58 &1767210831
 CircleCollider2D:
   m_ObjectHideFlags: 0

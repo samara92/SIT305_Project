@@ -76,10 +76,12 @@
      <Compile Include="Assets\Scripts\LifeManager.cs" />
      <Compile Include="Assets\Scripts\LifePickUp.cs" />
      <Compile Include="Assets\Scripts\Mainmenu.cs" />
+     <Compile Include="Assets\Scripts\paralaxing.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PowerManager.cs" />
      <Compile Include="Assets\Scripts\ShootingEnemyHealthManager.cs" />
      <Compile Include="Assets\Scripts\SocreManager.cs" />
+     <Compile Include="Assets\Scripts\Tiling.cs" />
      <Compile Include="Assets\Scripts\TouchControlls.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

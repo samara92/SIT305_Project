@@ -3,6 +3,8 @@
 # SID:215158268
 # Project - Sonic Game App
 # Device Platform - Android and iOS
+# Game overview  
+	This game app developed using Unity software. I also used blender for create some characters and for create the game logo I used Photoshop software.  This is a platform game
 # This game created using by Unity Software.(version 2017.1.0f3)
   for run and test this game app in computer, you must need;
     - the latest version of Unity software in your computer

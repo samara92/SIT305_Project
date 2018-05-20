@@ -19,8 +19,9 @@ public class EnemyFireBall : MonoBehaviour {
 
 		}
 	}
+	//We use for physics simulations.FixedUpdate() runs at a constant 50 frames per second to match the physics engine.
 	void FixedUpdate(){
-		
+		//give the projectile a velocity
 		GetComponent<Rigidbody2D> ().velocity = new Vector2 (speed, GetComponent<Rigidbody2D> ().velocity.y);
 	}
 	// Update is called once per frame
@@ -28,22 +29,25 @@ public class EnemyFireBall : MonoBehaviour {
 
 	}
 
+	//The object must have a collider and set it's settings to Is trigger in order to run this  has this mettod.This method will get the collider that will clash with it.
 	void OnTriggerEnter2D(Collider2D col){
-
-
+		//if clashed coliider name player then player helath is reduces
 		if (col.tag == "Player") {
+			//HurtPlayer method will take the parameter and reduses the player helath according to the passed value;
+			try {
+				healthManager.HurtPlayer(damageToGive);
+			} catch (System.Exception ex) {
+				StaticData.ErrorLogList.Add (ex.ToString());
+			}
 
-			//Instantiate (deathEffect,col.transform.position,col.transform.rotation);
-			//Destroy (col.gameObject);
-			//SocreManager.AddPoints (pointsForKill);
-			healthManager.HurtPlayer(damageToGive);
 
 		}
 
-		//TO DO: Optimize code
+		//distroy the game object(projectile)
 		Destroy (gameObject);
 	}
 
+	//when projectile hit the ground it will destroy it
 	void OnCollisionEnter2D(Collision2D col){
 		Debug.Log (col.gameObject.tag);
 		if (col.gameObject.tag == "Ground") {

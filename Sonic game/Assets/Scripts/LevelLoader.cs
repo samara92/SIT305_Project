@@ -10,15 +10,10 @@ public class LevelLoader : MonoBehaviour {
 	void Start () {
 		playerInZone = false;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-
-
-			
-	}
+	//The object must have a collider and set it's settings to Is trigger in order to run this  has this mettod.This method will get the collider that will clash with it.
 	void OnTriggerEnter2D(Collider2D col){
 	
+		// if door trigger clash ith player collider load the next level
 		if (col.name == "Player") {
 		
 			playerInZone = true;
@@ -27,16 +22,12 @@ public class LevelLoader : MonoBehaviour {
 
 		}
 	}
-
+	//The object must have a collider and set it's settings to Is trigger in order to run this  has this mettod.This method will get the collider that will clash with it.
 	void OnTriggerExit2D(Collider2D col){
 	
 		if (col.name == "Player") {
 		
 			playerInZone = false;
 		}
-	}
-
-	public void EnableWon(){
-		
 	}
 }

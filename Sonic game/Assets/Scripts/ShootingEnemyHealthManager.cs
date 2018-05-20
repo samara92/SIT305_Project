@@ -7,11 +7,6 @@ public class ShootingEnemyHealthManager : MonoBehaviour {
 	public int enemyHealth;
 	public GameObject deathEffect;
 	public int pointsOnDeath;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -25,7 +20,7 @@ public class ShootingEnemyHealthManager : MonoBehaviour {
 		
 		}
 	}
-
+	//This method will take one parameter. Inside the method it will reduce the passed parameter from enemy health
 	public void GivenDamage(int damageToGive){
 	
 		enemyHealth -= damageToGive;

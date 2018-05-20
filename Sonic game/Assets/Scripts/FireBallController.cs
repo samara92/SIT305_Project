@@ -23,25 +23,29 @@ public class FireBallController : MonoBehaviour {
 	void Update () {
 		
 	}
-
+	//The object must have a collider and set it's settings to Is trigger in order to run this  has this mettod.This method will get the collider that will clash with it.
 	void OnTriggerEnter2D(Collider2D col){
-
-
+		//if clashed tag name Enemy then Enemy helath is reduces
 		if (col.tag == "Enemy") {
-		
-			//Instantiate (deathEffect,col.transform.position,col.transform.rotation);
-			//Destroy (col.gameObject);
-			//SocreManager.AddPoints (pointsForKill);
+			try {
+				col.GetComponent<EnemyHealthManager> ().GivenDamage (damageToGive);
+			} catch (System.Exception ex) {
+				StaticData.ErrorLogList.Add (ex.ToString ());
+			}
 
-			col.GetComponent<EnemyHealthManager> ().GivenDamage (damageToGive);
 		}
 		if (col.tag == "Boss") {
-			col.GetComponent<BossHealthManager> ().GivenDamage (damageToGive);
+			//if clashed tag name Boss then Boss helath is reduces
+			try {
+				col.GetComponent<BossHealthManager> ().GivenDamage (damageToGive);
+			} catch (System.Exception ex) {
+				StaticData.ErrorLogList.Add (ex.ToString ());
+			}
 		}
-		//TO DO: Optimize code
+		//distroy the game object(projectile)
 		Destroy (gameObject);
 	}
-
+	//when projectile hit the ground it will destroy it
 	void OnCollisionEnter2D(Collision2D col){
 		Debug.Log (col.gameObject.tag);
 		if (col.gameObject.tag == "Ground") {

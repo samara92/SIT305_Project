@@ -20,6 +20,8 @@ public class BossAI : MonoBehaviour {
 	void Start () {
 		ySize = transform.localScale.y;
 	}
+
+	//We use for physics simulations.FixedUpdate() runs at a constant 50 frames per second to match the physics engine.
 	void FixedUpdate(){
 
 		hittingObstacle = Physics2D.OverlapCircle (obstacleCheck.position, obstacleCheckRadius, whatIsobstacle);
@@ -29,14 +31,20 @@ public class BossAI : MonoBehaviour {
 
 		if (moveRight) {
 			transform.localScale = new Vector3 (-ySize,transform.localScale.y,transform.localScale.z);
-			GetComponent<Rigidbody2D> ().velocity = new Vector2 (moveSpeed, GetComponent<Rigidbody2D> ().velocity.y);
+			//getting the rigid body and apply it a velocity.
+			try {
+				GetComponent<Rigidbody2D> ().velocity = new Vector2 (moveSpeed, GetComponent<Rigidbody2D> ().velocity.y);
+			} catch (System.Exception ex) {
+				StaticData.ErrorLogList.Add (ex.ToString ());
+			}
+
 		} else {
 			transform.localScale = new Vector3 (ySize,transform.localScale.y,transform.localScale.z);
-			GetComponent<Rigidbody2D> ().velocity = new Vector2 (-moveSpeed, GetComponent<Rigidbody2D> ().velocity.y);
+			try {
+				GetComponent<Rigidbody2D> ().velocity = new Vector2 (-moveSpeed, GetComponent<Rigidbody2D> ().velocity.y);
+			} catch (System.Exception ex) {
+				StaticData.ErrorLogList.Add (ex.ToString ());
+			}
 		}
-	}
-	// Update is called once per frame
-	void Update () {
-		
 	}
 }

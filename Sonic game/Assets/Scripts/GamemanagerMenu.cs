@@ -6,11 +6,8 @@ public class GamemanagerMenu : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		//Unpause the game when loading the game
 		Time.timeScale = 1;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }

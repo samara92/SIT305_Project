@@ -7,16 +7,7 @@ public class PowerManager : MonoBehaviour {
 	public Sprite powerUpImage;
 	public Image animImage;
 	public GameObject GOpowerUpAnim;
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
+	//The object must have a collider and set it's settings to Is trigger in order to run this  has this mettod.This method will get the collider that will clash with it.
 	void OnTriggerEnter2D(Collider2D col){
 
 		if (col.name == "Player") {

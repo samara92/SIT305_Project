@@ -21,15 +21,17 @@ public class SocreManager : MonoBehaviour {
 		text.text = "" + score;
 		
 	}
-
+	//add score to the player.gets an integer variable
 	public static void AddPoints(int pointsToAdd){
 	
 		score += pointsToAdd;
+		// save it in XML file using key value paires
 		PlayerPrefs.SetInt ("CurrentPlayerScore",score);
 	}
-
+	//reset the score to zero
 	public static void Reset(){
 		score = 0;
+		// save it in XML file using key value paires
 		PlayerPrefs.SetInt ("CurrentPlayerScore",score);
 	}
 }

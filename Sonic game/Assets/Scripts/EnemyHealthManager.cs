@@ -17,15 +17,20 @@ public class EnemyHealthManager : MonoBehaviour {
 	void Update () {
 
 		if (enemyHealth <= 0) {
-		
-			Instantiate (deathEffect, transform.position, transform.rotation);
+		//if enemy health equal or bellow zero points will be added to the player as well as instantiate a death partical on the destroyied object.'
+			try {
+				Instantiate (deathEffect, transform.position, transform.rotation);
+			} catch (System.Exception ex) {
+				StaticData.ErrorLogList.Add (ex.ToString());
+			}
+
 			SocreManager.AddPoints (pointsOnDeath);
 			//TO DO: optimise
 			Destroy (gameObject);
 		
 		}
 	}
-
+	//This method will take one parameter. Inside the method it will reduce the passed parameter from enemy health
 	public void GivenDamage(int damageToGive){
 	
 		enemyHealth -= damageToGive;

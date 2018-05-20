@@ -9,17 +9,16 @@ public class HurtPlayer : MonoBehaviour {
 	void Start () {
 		healthManager = FindObjectOfType<HealthManager> ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
+	//The object must have a collider and set it's settings to Is trigger in order to run this  has this mettod.This method will get the collider that will clash with it.
 	void OnTriggerEnter2D(Collider2D col){
 	
 		if (col.name == "Player") {
-		
-			healthManager.HurtPlayer (damageToGive);
+			//if clashed collider name Player then Player helath is reduces
+			try {
+				healthManager.HurtPlayer (damageToGive);
+			} catch (System.Exception ex) {
+				StaticData.ErrorLogList.Add (ex.ToString ());
+			}
 		}
 	}
 }

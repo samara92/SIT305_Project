@@ -20,32 +20,23 @@ public class LevelManager : MonoBehaviour {
 	private float gravityStore;
 	public HealthManager healthManager;
 	public PolygonCollider2D PlayerGO;
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
 	public void RespawnPlayer(){
 	
 		StartCoroutine ("RespawnPlayerCorrutine");
 	}
-
+	//respawn player
 	public IEnumerator RespawnPlayerCorrutine(){
 		//disable respawnPartical
 		//enable and play death partical
 		respawnPartical.SetActive(false);
 		deathPartical.SetActive (true);
 
-//		gravityStore = player.GetComponent<Rigidbody2D> ().gravityScale;
-//		player.GetComponent<Rigidbody2D> ().gravityScale = 0f;
-//		player.GetComponent<Rigidbody2D> ().velocity = Vector2.zero;
+		//PlayerController script is disabled
 		player.enabled = false;
+		//player game object disabled
 		PlayerGO.enabled = false;
+		//Player Health manager disable
 		healthManager.isDead = false;
 		player.Move (0);
 		SocreManager.AddPoints (-deathPanalty);
@@ -58,7 +49,11 @@ public class LevelManager : MonoBehaviour {
 		player.transform.position = currentCheckPoint.transform.position;
 		player.enabled = true;
 		PlayerGO.enabled = true;
-		player.GetComponent<Renderer> ().enabled = true;
+		try {
+			player.GetComponent<Renderer> ().enabled = true;
+		} catch (System.Exception ex) {
+			StaticData.ErrorLogList.Add (ex.ToString ());
+		}
 		healthManager.FullHelath ();
 		healthManager.isDead = false;
 		//disable death partical

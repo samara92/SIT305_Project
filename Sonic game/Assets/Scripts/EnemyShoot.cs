@@ -18,19 +18,23 @@ public class EnemyShoot : MonoBehaviour {
 		
 	}
 
+	//The object must have a collider and set it's settings to Is trigger in order to run this  has this mettod.This method will get the collider that will clash with it.
 	void OnTriggerEnter2D(Collider2D col){
 
 		if (col.name == "Player") {
 
 			Debug.Log (col.name + "Soot Player");
-			Instantiate (fireBall,firePoint.position,firePoint.rotation);
+			//instantiate projctile
+			try {
+				Instantiate (fireBall,firePoint.position,firePoint.rotation);
+			} catch (System.Exception ex) {
+				StaticData.ErrorLogList.Add (ex.ToString ());
+			}
+
 
 			if(firePoint2 != null)
 			Instantiate (fireBall, firePoint2.position, firePoint2.rotation);
 
 		}
-	}
-	public void Fire(){
-		
 	}
 }

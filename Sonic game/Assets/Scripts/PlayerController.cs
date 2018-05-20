@@ -25,10 +25,15 @@ public class PlayerController : MonoBehaviour {
 	private float shotDelayCounter;
 
 	public bool speedPowerUp = false;
+	// Use this for initialization
 	void Start(){
-		playerAnim = GetComponent<Animator> ();
+		try {
+			playerAnim = GetComponent<Animator> ();
+		} catch (System.Exception ex) {
+			StaticData.ErrorLogList.Add (ex.ToString ());
+		}
 	}
-
+	//We use for physics simulations.FixedUpdate() runs at a constant 50 frames per second to match the physics engine.
 	void FixedUpdate(){
 	
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundCheckRadius, whatIsGround);
@@ -36,15 +41,17 @@ public class PlayerController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+		//every frame player Rigidbody2D velocity is checked and stored
 		playerRigidBody2DVelocity = new Vector2( GetComponent<Rigidbody2D> ().velocity.x,GetComponent<Rigidbody2D> ().velocity.y);
 
 		if (grounded)
 			doubleJump = false;
-
+		//playing the animation state grounded
 		playerAnim.SetBool ("Grounded", grounded);
 
 
-
+		//Key board controllers
 		#if UNITY_2017_1_OR_NEWER 
 		if (Input.GetKeyDown (KeyCode.Space) && grounded) {
 		
@@ -116,7 +123,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 	}
-
+	//this method will move player.input will get negative or positive value.
 	public void Move(float moveInput){
 	
 		moveVelocity = movmentSpeed * moveInput;
@@ -125,12 +132,7 @@ public class PlayerController : MonoBehaviour {
 	public void Fire(){
 		Instantiate (fireBall,firePoint.position,firePoint.rotation);
 	}
-
-	public void PowerUp(){
-	
-	//TO DO: power Up
-	}
-
+		
 	public void Jump(){
 		
 		//GetComponent<Rigidbody2D> ().velocity = new Vector2 (playerRigidBody2DVelocity.x, jumpHeight);

@@ -16,33 +16,38 @@ public class HealthManager : MonoBehaviour {
 	public LifeManager lifeSystem;
 	// Use this for initialization
 	void Start () {
-		//text = GetComponent<Text> ();
-		healthBar = GetComponent<Slider>();
-		//playerHelath = maxPlayerHealth;
+		//initilization player helath bar is loaded according to previously saved player health.
+		try {
+			healthBar = GetComponent<Slider>();	
+		} catch (System.Exception ex) {
+			StaticData.ErrorLogList.Add (ex.ToString ());
+		}
+		//loading the prevoiusly locally saved player health value.(saved in xml format,for getting the value we needs to pass the key of the data we need)
 		playerHelath = PlayerPrefs.GetInt("PlayerCurrentHealth");
 		healthBar.value = playerHelath;
-		//text.text = "" + playerHelath;
 		isDead = false;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
 	}
 
+	//this will reduce player health according to passed int value
 	public void HurtPlayer(int damageToGive){
+		//redusing player healthBar from method passed value
 		playerHelath -= damageToGive;
+		//then save it in XML file using key value paires
 		PlayerPrefs.SetInt("PlayerCurrentHealth",playerHelath);
+
 		if (playerHelath <= 0 && !isDead) {
+			
 			playerHelath = 0;
+			//reduce one life
 			lifeSystem.TakeLife ();
-			//text.text = "" + playerHelath;
 			healthBar.value = playerHelath;
+			//respawn the player
 			levelManager.RespawnPlayer ();
 			isDead = true;
 
 		} else {
-			//text.text = "" + playerHelath;
+
 			if (playerHelath > maxPlayerHealth) {
 				
 				playerHelath = maxPlayerHealth;
@@ -50,12 +55,12 @@ public class HealthManager : MonoBehaviour {
 			healthBar.value = playerHelath;
 		}
 	}
-
+	//restore players health full
 	public void FullHelath(){
 		
 		playerHelath = maxPlayerHealth;
-		//text.text = "" + playerHelath;
 		healthBar.value = playerHelath;
+		// save it in XML file using key value paires
 		PlayerPrefs.SetInt("PlayerCurrentHealth",playerHelath);
 	}
 }
